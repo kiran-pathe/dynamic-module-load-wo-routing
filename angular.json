@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng13-demo": {
+    "dynamic-module-load-wo-routing": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng13-demo",
+            "outputPath": "dist/dynamic-module-load-wo-routing",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng13-demo:build:production"
+              "browserTarget": "dynamic-module-load-wo-routing:build:production"
             },
             "development": {
-              "browserTarget": "ng13-demo:build:development"
+              "browserTarget": "dynamic-module-load-wo-routing:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng13-demo:build"
+            "browserTarget": "dynamic-module-load-wo-routing:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "ng13-demo"
+  "defaultProject": "dynamic-module-load-wo-routing"
 }
